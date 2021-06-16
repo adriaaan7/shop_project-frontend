@@ -1,13 +1,94 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap");
+
+html {
+  background-color: rgb(190, 188, 188);
+}
+
+.App {
+  background-color: whitesmoke;
+  min-width: 900px;
+  margin: 5px auto;
+  min-height: 300px;
+  padding: 30px;
+  border: 1px solid rgb(209, 110, 72);
+  border-radius: 5px;
+}
+
+.container {
+  display: inline-flex;
+  border: 1px solid rgb(50, 153, 105);
+  border-radius: 5px;
+}
+
+.left-container {
+  min-width: 450px;
+  border: 1px solid rgb(172, 28, 28);
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.right-container {
+  min-width: 450px;
+  padding: 5px;
+}
+
+.form-label {
+  display: block;
+}
+
+.form-input {
+  width: 25%;
+  height: 40px;
+  padding: 3px 7px;
+}
+
+.form-textarea-description {
+  width: 65%;
+  height: 100px;
+  text-align: left;
+  resize: vertical;
+}
+
+.item-container {
+  display: flex;
+}
+
+.btn {
+  display: inline-block;
+  background: #000;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 15px;
+  font-family: inherit;
+}
+
+.add-form {
+  margin-bottom: 40px;
+}
+
+.form-control {
+  margin: 20px 0;
+  font-size: 20px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: "Poppins", "sans-serif";
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
