@@ -1,73 +1,13 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 
-html {
-  background-color: rgb(190, 188, 188);
-}
-
-.App {
-  background-color: whitesmoke;
-  min-width: 900px;
-  margin: 5px auto;
-  min-height: 300px;
-  padding: 30px;
-  border: 1px solid rgb(209, 110, 72);
-  border-radius: 5px;
-}
-
-.container {
-  display: inline-flex;
-  border: 1px solid rgb(50, 153, 105);
-  border-radius: 5px;
-}
-
-.left-container {
-  min-width: 450px;
-  border: 1px solid rgb(172, 28, 28);
-  padding: 5px;
-  border-radius: 5px;
-}
-
-.right-container {
-  min-width: 450px;
-  padding: 5px;
-}
-
-.form-label {
-  display: block;
-}
-
-.form-input {
-  width: 25%;
-  height: 40px;
-  padding: 3px 7px;
-}
-
-.form-textarea-description {
-  width: 65%;
-  height: 100px;
-  text-align: left;
-  resize: vertical;
+html,
+body,
+#root {
+  height: 100%;
 }
 
 .item-container {
   display: flex;
-}
-
-.btn {
-  display: inline-block;
-  background: #000;
-  color: #fff;
-  border: none;
-  padding: 10px 20px;
-  border-radius: 5px;
-  cursor: pointer;
-  text-decoration: none;
-  font-size: 15px;
-  font-family: inherit;
-}
-
-.add-form {
-  margin-bottom: 40px;
 }
 
 .form-control {
@@ -82,13 +22,24 @@ html {
 }
 
 body {
-  margin: 0;
-  font-family: "Poppins", "sans-serif";
+  background: url("./components/res/pizza.jpg");
+  font-family: "Roboto", "sans-serif";
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  position: relative;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+.app-nav {
+  display: flex;
+  padding: 5px;
+  margin: auto;
+}
+
+.App {
+  min-height: 100vh;
 }

@@ -1,0 +1,12 @@
+.navbar-brand {
+  text-align: left;
+  font-size: 15px;
+}
+
+#wrapper {
+  display: flex;
+}
+
+.navbar {
+  background-color: rgba(66, 66, 66, 0.9);
+}

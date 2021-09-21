@@ -1,0 +1,25 @@
+.menu-container {
+  align-items: left;
+}
+
+.menu-panel {
+  min-height: auto;
+  background-color: rgb(95, 90, 90);
+  padding: 5px;
+}
+
+.item-grid {
+  display: grid;
+  width: auto;
+  grid-template-columns: repeat(2, auto);
+  column-gap: 0.5rem;
+}
+
+.menu-name {
+  color: #fff;
+  text-align: center;
+}
+
+.item-grid-message {
+  text-align: right;
+}

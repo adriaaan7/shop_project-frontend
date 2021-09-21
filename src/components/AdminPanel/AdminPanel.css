@@ -1,0 +1,12 @@
+.container-admin {
+  border: 1px solid rgb(94, 97, 97);
+  background-color: #fff;
+  border-radius: 10px;
+  margin-bottom: 5px;
+  padding-top: 0.5rem;
+  justify-content: flex-start;
+}
+
+.admin-header {
+  padding: 10px;
+}

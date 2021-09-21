@@ -1,65 +1,24 @@
-import Header from './components/Header'
-import AddItem from './components/AddItem'
-import Items from './components/Items'
-import { useState, useEffect } from 'react'
-
+import { Route, Switch } from "react-router-dom";
+import AdminPanel from "./components/AdminPanel/AdminPanel.js";
+import MenuPanel from "./components/MenuPanel/MenuPanel.js";
+import MyNavbar from "./components/MyNavbar/MyNavbar.js";
+import MainPage from "./components/MainPage/MainPage.js";
+import UpdateDish from "./components/UpdateDish/UpdateDish.js";
+import ContactPage from "./components/ContactPage/ContactPage.js";
 
 function App() {
-
-  const [showAddButton, setShowAddButton] = useState(false)
-
-  const [itemsArr, setItems] = useState([])
-
-  useEffect(() => {
-      const getItems = async () => {
-
-      const itemsFromBackEnd = await fetchItems()
-      setItems(itemsFromBackEnd)
-    }
-
-    getItems()
-  }, [])
-
-  const fetchItems = async () => {
-    const response = await fetch('http://localhost:8080/api/all');
-    const data = await response.json()
-
-    console.log('Data from BACKEND')
-    console.log(data)
-    return data
-  }
-
-  const fetchItem = async (id) => {
-    const response = await fetch(`http://localhost:8080/api/${id}`)
-    const data = await response.json()
-
-    return data
-  }
-
-
   return (
-    
     <div className="App">
-      <div className='container'>
-        <div className='left-container'>
-        <Header title='Adding items' 
-          toggleAddForm={() => {
-            setShowAddButton(!showAddButton)
-          }} 
-          showAddButton={showAddButton}/>
-
-        { showAddButton ? <AddItem/> : ''}
-
-        </div>
-
-        <div className='right-container'>
-          <Items items={itemsArr}/>
-        </div>
-
-      </div>
+      <MyNavbar />
+      <Switch>
+        <Route exact path="/" component={MainPage} />
+        <Route exact path="/admin" component={AdminPanel} />
+        <Route exact path="/update" component={UpdateDish} />
+        <Route exact path="/menu" component={MenuPanel} />
+        <Route exact path="/contact" component={ContactPage} />
+      </Switch>
     </div>
   );
-        
 }
 
 export default App;

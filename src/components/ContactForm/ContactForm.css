@@ -1,0 +1,14 @@
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  width: 50vw;
+  max-width: 400px;
+  background-color: rgb(156, 105, 58);
+  border: grey 1px solid;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.contact-form-textarea {
+  resize: none;
+}

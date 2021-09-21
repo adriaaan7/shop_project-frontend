@@ -1,0 +1,13 @@
+.menu-button {
+  display: flex;
+  position: absolute;
+  align-items: center;
+  justify-content: center;
+  left: 50%;
+  top: 50%;
+  color: white;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  border: rgb(77, 77, 77) ridge 1px;
+  border-radius: 10px;
+}

@@ -1,0 +1,10 @@
+.item-list {
+  padding: 2px;
+  margin: 5px;
+  border: 1px solid rgb(65, 65, 65);
+  border-radius: 5px;
+  color: #fff;
+  background-color: rgb(196, 14, 14);
+  font-size: 14px;
+  width: auto;
+}
