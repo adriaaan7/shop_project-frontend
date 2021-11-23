@@ -21,6 +21,7 @@ const UpdateDish = () => {
   }, []);
 
   const handleClose = () => setShow(false);
+
   const updateDish = async (id, name, price, description, restaurant) => {
     await axios.put(`http://localhost:8080/menu/${id}`, null, {
       params: {

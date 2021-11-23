@@ -14,16 +14,20 @@ const MyNavbar = () => {
     <Navbar className="navbar">
       <Container>
         <Navbar.Brand href="/">
+          <h5>Home</h5>
           <Logo logo={homeLogo} />
         </Navbar.Brand>
         <Nav className="me-auto">
           <Nav.Link href="/menu">
+            <h5>Menu</h5>
             <Logo logo={menuLogo} />
           </Nav.Link>
           <Nav.Link href="/admin">
+            <h5>Admin</h5>
             <Logo logo={adminLogo} />
           </Nav.Link>
           <Nav.Link href="/contact">
+            <h5>Contact</h5>
             <Logo logo={contactLogo} />
           </Nav.Link>
         </Nav>
